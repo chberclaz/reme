@@ -1,0 +1,3 @@
+Prototype of a social network plattform 
+
+developed in jsp, running on a catalina Tomcat server. Connected to a Postgres Database
