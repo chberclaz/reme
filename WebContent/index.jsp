@@ -216,7 +216,7 @@ try {
 			    <p class="title_small">Benutzergruppe erstellen:</p>
 			    <p><input type="text" id="groupname" placeholder="Gruppenname" name="groupname"></p>
 			    <br>
-				<p class="text">W&auml;hle die Benutzer, welche die neue Gruppe sehen d&uuml;rfen:</p>
+				<p class="text">W&auml;hle die Benutzer, die die neue Gruppe sehen d&uuml;rfen:</p>
 				<div id="selection-lists">
 		  			<select name="user-search" size="4" multiple>
 		  			<% rsUser= dbConnect.showUser();
