@@ -1,0 +1,488 @@
+
+/* reset all */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*-----------*/
+
+/* Typselektoren */
+
+body {
+  margin: 8px;
+  font-family: Verdana, sans-serif;
+  min-width: 850px;
+  background-color: #ffffef;
+  font-size: 12px;
+  margin-bottom: 130px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-size: 58px;
+  margin-top: 15px;
+  color: #ffeb89;
+}
+
+h2{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+label {
+  width: 4em;
+  margin: 0.1em;
+  padding: 0;
+}
+
+fieldset {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+}
+
+fieldset div {
+  padding: 2px;
+}
+
+
+/* 3. ID-Selektor  */
+
+#page{
+  position: relative;
+  width: 100%;
+  padding: 0;
+
+  
+}
+
+#header h1 {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-image: url('../img/header_bg.jpg');
+  height: 29px;
+  padding: 18px;
+  margin: 3px;
+  background-color: #70A8C3;
+  color: #ffeb89;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#page_content {
+  position: static;
+  margin-top: 40px;
+ 
+}
+
+#page_content_gruppen {
+  position: static;
+  margin-top: 40px;
+  margin-left: 170px;
+ 
+}
+
+#page_konto{
+  position:static;
+  margin:10px;
+  margin-right: 0px;
+  margin-left: 170px;
+  padding: 0px;	
+}
+
+#remes {
+  position:static;
+  margin:10px;
+  margin-right: 0px;
+  margin-left: 170px;
+  padding: 0px;
+}
+  
+  
+#page_content .reme {
+  background-image:url('../img/Postit_large.jpg');
+  background-position:center; 
+  float: left;
+  max-width: 300px;
+  max-height: 250px;
+  min-width: 170px;
+  min-height: 120px;
+  background-color: #FFF53C;
+  font-size: small;
+  margin: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  overflow: auto;
+  
+}
+
+
+#remes li {
+  border: 2px;
+  display: block;
+  clear:left;	
+  background-color: #1c6cdd;
+  border-radius: 5px;
+}
+
+
+#page_content .reme .title {
+  font-size: medium;
+  border-bottom-color: black;
+  border-bottom: solid 1px;
+  margin-bottom: 2px;
+  margin-right: 30px;  
+  float:left;
+}
+
+#page_content .reme .content {
+  clear: left;
+  float: left;	
+}
+
+#page_content .reme .remeEditField {
+  padding: 3px;
+  margin: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  clear: left;
+  float: left;	  
+  background-color: #FFF5AC;
+  width: 95%;
+  Display: block;
+  
+}
+#page_content .reme .remeEditField .button{
+  clear: left;
+  float: left;	
+}
+#page_content .reme .remeEditField .tittleEdit{
+  width: 90%;
+  clear: left;
+  float: left;	
+}
+#page_content .reme .remeEditField .contentEdit{
+  width: 90%;
+  clear: left;
+  float: left;	
+}
+
+#page_content .reme .del{
+  position: relative;
+  
+  right: 0px;
+  top: 0px;
+  text-align: right;
+  text-decoration: none;
+  float:right;
+}
+
+#page_content .reme .edit{
+  position: relative;
+  right: 0px;
+  top: 0px;
+  text-align: right;
+  text-decoration: none;
+  float:right;
+}
+
+#page_content .reme .remeEditField {
+  display: none;	
+}
+#page_content .reme .X:hover{
+  background-color: #ffffff;
+}
+
+#page_content .reme .content {
+	font-size: small;	
+}
+
+#groups {
+  display:block;
+  position:fixed;
+  overflow:scroll;
+  margin-top: 10px;
+  margin-left: 530px;
+  width:150px;
+  height:170px;
+  padding: 0px;
+  border: none;
+  list-style-type: none;
+  background-color: #23a2e9;
+}
+
+#linkedGroups{
+
+  display:block;
+  position:fixed;
+  margin-top: 6px;
+  margin-left: 3px;
+  width:150px;
+  padding: 5px;
+  border: none;
+  list-style-type: none;
+  background-color: #1087eb;
+  border-radius: 10px;
+}
+
+#groups div {
+  position: relative;
+  right: 0px;
+  top: 0px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  float: left;
+  margin: 2px;
+  padding: 2px;
+  border: solid 1px;
+
+}
+
+#groups .X{
+  position: relative;
+  text-decoration: none;
+  background-color: #ffffff;
+  float:right;
+}
+
+#popUp {
+  position: fixed;
+  bottom: 0;
+  width: 400px;
+  height: 21px;
+  background-color: #1087eb;
+  cursor: pointer;
+  margin-left: 170px;
+}
+
+#openDiv {
+  margin: 3px;
+  margin-left: 20px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+/* 4. Class-Selektoren */
+
+.button{
+  font-family: sans-serif;
+  margin-left: 2px;
+  padding: 1px 2px 1px 2px ;
+  height: 25px;
+}
+
+/* 5. re:me Bearbeitung */
+
+#reme_edit {
+  position: fixed;
+  width: 700px;
+  height: 400px;
+  bottom: 20px;
+  display:block;
+  margin-left: 160px;
+  background-color: #1087eb;
+  border-radius: 10px;
+  /*background-color: rgba(112,168,195,0.7);*/
+  /* Fallback for web browsers that doesn't support RGBa */
+  /*background: rgb(112, 168, 195) transparent;*/
+  /*display: none;*/
+}
+
+#reme_edit table td{
+	background-color: #23a2e9;
+	}
+
+#reme_input {
+  position: relative;
+  padding: 10px;
+  left: 5px;
+}
+
+#user_input {
+  margin-top: 5px;
+  position: relative;
+  float: left;
+  left: 5px;
+  padding: 10px;
+}
+
+#selection-lists {
+  position: relative;
+  float: right;
+  padding: 5px;
+  min-width: 100px;
+}
+
+
+
+
+/* 6. Navigation (Menu mit CSS) */
+
+#navigation {
+  margin-left: 170px;
+  position:static;
+  float: left;
+  padding-top: 10px;
+  border: none;
+  list-style-type: none;
+
+}
+#navigation li  {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: inline;
+  padding: 7px 15px;
+  width: 102px;
+  color: white;
+  background-color: #1087eb;
+}
+
+#navigation li:hover {
+  background-color: #04abf2;
+}
+
+#navigation li a {
+  text-decoration: none;
+  width: 102px;
+  margin: 0;
+  padding: 7px 15px;
+  color: white;
+  text-align: left;
+}
+
+#navigation li a:visited {
+  color: #edffff
+}
+
+
+input {
+	padding: 0.3em 0.3em;
+	font-size: 12px;
+	width: 100%;
+	border-style: dashed;
+	border-color: #e8c9a7;
+	border-width: 2px;
+	width: 195px;	
+}
+
+label {
+	padding: 0.3em 0.3em;
+	font-size: 12px;
+	text-align: right;
+}
+
+input.but_board {
+		background-color: #ffffef;
+		width: 110px;
+		margin-left: 5px;
+		border-style: double;
+		background-color: #e64901;
+}
+
+input.but_reme {
+		background-color: #ffffef;
+		width: 120px;
+		border-style: double;
+		background-color: #e64901;
+}
+
+input.butKonto {
+		background-color: #e84535;
+		width: 120px;
+		margin-left: 15%;
+		margin-right: 15%;
+		border-style: double;
+		
+}
+	
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, sans-serif;
+	font-size: 35px;
+	font-color: #fff797;
+	text-decoration: none;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+	font-color: #fff797;
+	text-decoration: none;
+}
+
+p.text{
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+p.text_w{
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	float: left;
+	color: white;
+}
+
+p.title_small{
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+p.title_reme{
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+p.title_small_w{
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: white;
+	margin-left: 2px;
+}
+
+textarea {
+  font-size: 12px;
+}	
+	
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #ffffef;
+}
+
+#GroupUsers table td{
+	background-color: #2a49d8;
+	}	
+	
+#editGroups{
+	margin-left: 350px;
+	}
+	
+#GroupUsers{
+
+	text-align: center;
+	text-indent: 10px;
+	width: 350px;
+	float:left;
+	}
+
+#GroupUsers table{
+	margin-top: 10px;
+	}
+	
