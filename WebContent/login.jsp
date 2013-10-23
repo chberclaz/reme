@@ -88,7 +88,7 @@
 				<%if(uid==-2) { %>
 					<tr>
 						<td><p class="error">Fehler:</p></td>
-						<td><p class="error">Passwort stimmt nicht &uuml;berein</p></td>
+						<td><p class="error">fehlerhafte Eingaben</p></td>
 					</tr>
 				<% } %>
 				<% String vname = request.getParameter("vname")==null ? "" : request.getParameter("vname"); 
